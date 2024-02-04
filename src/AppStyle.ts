@@ -5,6 +5,7 @@ export const Container = styled.div`
     width: 100%;
     max-width:1140px;
     margin: auto;
+    
 `;
 export const Banner = styled.div`
     width: 100%;
@@ -14,7 +15,6 @@ export const Banner = styled.div`
     background-repeat: no-repeat;
     background-image: url(${bg});
     background-position: center;
-    background-size: contain;
-
-   
+    background-size: contain; 
 `;
+
