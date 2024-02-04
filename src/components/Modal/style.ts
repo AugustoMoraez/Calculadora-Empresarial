@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 type propModal = {
-    display:true|false;
+    display:string;
 }
 
 export const Modal = styled.div<propModal>`
@@ -12,16 +12,20 @@ export const Modal = styled.div<propModal>`
     left: 0;
     width: 100%;
     height: 100vh;
-    display: ${propModal => propModal.display?"flex":"none"};
+    display: ${propModal => propModal.display === "true" ? "flex" : "none" };
     justify-content: center;
     align-items: center;
     transition: 0.5s;
 
+    
     img{
         border-radius: 20px;
         width: 100%;
         max-width: 1140px;
         padding: 5px;
+        transition: 0.5s;
+        cursor: pointer;
+        
     }
 
 
