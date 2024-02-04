@@ -16,5 +16,14 @@ export const Banner = styled.div`
     background-image: url(${bg});
     background-position: center;
     background-size: contain; 
+
+   
+`;
+
+export const Title = styled.h2`
+    margin-top: 50px;
+    border-top: 1px solid #e3e3e3;
+    font-weight: 100;
+    font-style:italic;
 `;
 

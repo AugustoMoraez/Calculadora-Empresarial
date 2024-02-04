@@ -1,4 +1,4 @@
-import { Container,Banner } from "./AppStyle";
+import { Container,Banner,Title} from "./AppStyle";
 import { ModalHome } from "./components/Modal";
 
 
@@ -7,6 +7,7 @@ const App = () => {
     <Container>
       <ModalHome/>
       <Banner/>
+      <Title>Escolha uma ferramenta :</Title>
     </Container>    
   )
 }
