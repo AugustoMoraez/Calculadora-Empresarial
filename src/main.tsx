@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import { GlobalStyle } from './GlobalStyle.ts';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById('Calcular')!).render(
   <React.StrictMode>
     <GlobalStyle/>
     <App />

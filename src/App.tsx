@@ -1,7 +1,11 @@
- 
+ import { Container,Banner } from "./AppStyle";
+
+
 const App = () => {
   return (
-    <div>ola</div>    
+    <Container>
+      <Banner/>
+    </Container>    
   )
 }
 
