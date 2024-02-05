@@ -1,5 +1,7 @@
-import { Container,Banner,Title} from "./AppStyle";
+import { Container,Banner} from "./AppStyle";
 import { ModalHome } from "./components/Modal";
+import { Route,Routes } from "react-router-dom";
+import { Home } from "./Routes/Home";
 
 
 const App = () => {
@@ -7,7 +9,9 @@ const App = () => {
     <Container>
       <ModalHome/>
       <Banner/>
-      <Title>Escolha uma ferramenta :</Title>
+      <Routes>
+        <Route path={"/"} element={<Home/>} />
+      </Routes>
     </Container>    
   )
 }
