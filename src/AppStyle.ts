@@ -4,6 +4,7 @@ import bg from "./assets/banner-01.png";
 export const Container = styled.div`
     width: 100%;
     max-width:1140px;
+    padding: 10px;
     margin: auto;
     
 `;
@@ -25,5 +26,8 @@ export const Title = styled.h2`
     border-top: 1px solid #e3e3e3;
     font-weight: 100;
     font-style:italic;
+    @media (max-width:450px) {
+        font-size: 18px;
+    }
 `;
 
