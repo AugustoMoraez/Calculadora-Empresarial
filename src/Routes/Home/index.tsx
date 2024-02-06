@@ -1,15 +1,19 @@
 import { Container,Title,GridContainer } from "./style";
 import { CardItem } from "../../components/CardGrid";
+import { data } from "../../data/data";
 
 export const Home = () => {
     return(
         <Container>
-             <Title>Escolha uma ferramenta :</Title>
+             <Title>O que deseja calcular?</Title>
              <GridContainer>
-                <CardItem/>
-                <CardItem/>
-                <CardItem/>
-                <CardItem/>
+                {data.map((data,index)=>(
+                    <CardItem 
+                    key={index}
+                    route={data.route}
+                    title={data.title}
+                    desc={data.desc}/>
+                ))}
              </GridContainer>
         </Container>
     )

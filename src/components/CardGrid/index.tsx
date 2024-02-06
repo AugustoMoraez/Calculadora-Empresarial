@@ -3,12 +3,18 @@ import { Card } from "./style"
 import { TiArrowForward } from "react-icons/ti"
 
 
-export const CardItem = () => {
+export type dataType = {
+    route:string,
+    title:string,
+    desc:string
+}
+
+export const CardItem = (prop:dataType) => {
     return(
         <Card>
-            <h2>Custo de Produção</h2>
-            <p>Calcule quanto voce deve cobrar por um produto ou serviço.</p>
-            <Link to={"/"}><TiArrowForward/>Iniciar</Link>
+            <h2>{prop.title}</h2>
+            <p>{prop.desc}</p>
+            <Link to={prop.route}><TiArrowForward/>Iniciar</Link>
         </Card>
     )
 }

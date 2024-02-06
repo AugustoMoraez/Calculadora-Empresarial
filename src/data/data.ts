@@ -1,11 +1,20 @@
-import { dataType } from "../types/data";
+import { dataType } from "../components/CardGrid/index";
  
 
 export const data:dataType[] = [
     {
-        route:'/calcular-produção',
-        title:"calculo de produção",
-        desc:"veja quanto voce gasta para fazer um produto ou realizar uma tarefa, para assim poder  cobrar justamente pelo seu serviço",
-        color:"#001100"
+        route:'/calcular-producao',
+        title:"Produção",
+        desc:"Analise os custos envolvidos na produção de um item, a fim de estabelecer uma remuneração justa pelos seus serviços."
+    },
+    {
+        route:'/calcular-servico',
+        title:"Serviço",
+        desc:"Analise os custos envolvidos na execução de uma tarefa, a fim de estabelecer uma remuneração justa pelos seus serviços."
+    },
+    {
+        route:'/calcular-lucro-liquido',
+        title:"Lucro liquido",
+        desc:"Este aplicativo permiti uma compreensão clara e precisa do desempenho econômico de seus negócios."
     }
 ]
